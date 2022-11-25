@@ -11,7 +11,7 @@ Different from Spring Native directly generating Docker images, the binary files
 
 1. Generate AOT Jar.
    + Maven:
-      + Add repositories
+      + Add repositories.
           ```xml
           <repositories>
               <repository>
