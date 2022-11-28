@@ -9,7 +9,7 @@
 
 ## 用法
 
-**注意**: 确保Spring Boot版本是**2.7.1**!
+**注意**: 确保Spring Boot版本是**2.7.1**！
 
 1. 生成AOT Jar
    + Maven:
