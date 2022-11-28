@@ -9,6 +9,8 @@ Different from Spring Native directly generating Docker images, the binary files
 
 ## Usage
 
+**Notice**: Ensure Spring Boot Version is **2.7.1**!
+
 1. Generate AOT Jar.
    + Maven:
       + Add repositories.
