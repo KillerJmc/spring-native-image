@@ -14,6 +14,9 @@ do
   # 解压jar文件
   cd "/jar/$jarName" && jar -xf "/jar/$jarName.jar"
 
+  # 删除可能存在的META-INF文件夹
+  rm -rf "BOOT-INF/classes/META-INF"
+
   # 移动GraalVM配置文件到类路径
   mv -f "META-INF" "BOOT-INF/classes"
 
