@@ -23,8 +23,8 @@ do
   # 获取依赖的jar包路径，用":"分割
   libs=`ls -1 "BOOT-INF/lib" | awk '{print "BOOT-INF/lib/"$0}' | tr '\n' ':'`
 
-  # 通过解压的jar文件开始构建二进制文件
-  native-image -o "/target/$jarName" -cp "BOOT-INF/classes:$libs"
+  # 通过解压的jar文件开始构建静态的二进制文件
+  native-image -o "/target/$jarName" --static --libc=musl -cp "BOOT-INF/classes:$libs"
 
   # 删除jar文件解压文件夹
   rm -rf "/jar/$jarName"

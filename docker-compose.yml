@@ -2,7 +2,7 @@ version: "3"
 
 services:
   spring-native-image:
-    image: ghcr.io/graalvm/native-image:ol9-java17
+    image: ghcr.io/graalvm/native-image:muslib-ol9-java17
     volumes:
       - ./jar:/jar
       - ./script:/script
